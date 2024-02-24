@@ -3,7 +3,6 @@ import Container from "@mui/material/Container";
 
 import Header from "@/components/layout/header/index";
 import Footer from "@/components/layout/footer/index";
-import PageName from "@/components/pagename";
 import WorkLocationMap from "@/components/WorkLocationMap";
 import SearchJobByOptions from "@/components/SearchJobByOptions";
 import WorkingTypes from "@/components/WorkingTypes";
@@ -14,7 +13,23 @@ export default function Home() {
     <div>
       <Header />
       <div className="py-20 px-0">
-        <PageName />
+        <div className="pageName bg-white">
+          <Container className="h-12 flex items-center gap-6">
+            <img
+              src="/images/icons/icon-home.svg"
+              height={20}
+              width={20}
+              alt="brand-icon"
+            />
+            <img
+              src="/images/icons/big-mark.svg"
+              height={20}
+              width={20}
+              alt="brand-icon"
+            />
+            <p className="font-semibold">求人 一覧</p>
+          </Container>
+        </div>
         {/* banner */}
         <div className="banner flex flex-col justify-center">
           <div className="banner-child-1">

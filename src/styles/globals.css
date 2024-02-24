@@ -26,7 +26,9 @@ body {
 .main-color {
   color: var(--main-color);
 }
-
+.pageName {
+  border-bottom: 2px solid #9d9a9b; 
+}
 /* banner */
 .banner {
   background-color: white;
