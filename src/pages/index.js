@@ -12,22 +12,24 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="py-20 px-0">
+      <div className="py-16 px-0">
         <div className="pageName bg-white">
-          <Container className="h-12 flex items-center gap-6">
-            <img
-              src="/images/icons/icon-home.svg"
-              height={20}
-              width={20}
-              alt="brand-icon"
-            />
-            <img
-              src="/images/icons/big-mark.svg"
-              height={20}
-              width={20}
-              alt="brand-icon"
-            />
-            <p className="font-semibold">求人 一覧</p>
+          <Container>
+            <div className="py-4 flex items-center gap-6">
+              <img
+                src="/images/icons/icon-home.svg"
+                height={20}
+                width={20}
+                alt="brand-icon"
+              />
+              <img
+                src="/images/icons/big-mark.svg"
+                height={20}
+                width={20}
+                alt="brand-icon"
+              />
+              <p className="font-semibold">求人 一覧</p>
+            </div>
           </Container>
         </div>
         {/* banner */}
