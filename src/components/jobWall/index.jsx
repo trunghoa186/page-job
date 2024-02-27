@@ -1,6 +1,6 @@
 import React from "react";
 
-const JobWal = () => {
+const JobWal = ({image, content1, content2}) => {
   return (
     <div className="block-job flex flex-col md:flex-row items-center gap-2">
       <div className="block-job-image ml-4">
@@ -12,7 +12,7 @@ const JobWal = () => {
           className="secondary-image"
         />
         <img
-          src="/images/home/image-1.svg"
+          src={image}
           height={336}
           width={504}
           alt="brand-icon"
@@ -28,9 +28,9 @@ const JobWal = () => {
           アルバイト・パート
         </button>
         <p className="text-2xl md:text-4xl">
-          保育士(認可保育園/託児所)/資格必須/ブランクあり
+          {content1}
         </p>
-        <p className="text-xl md:text-2xl">東京都東久留米市</p>
+        <p className="text-xl md:text-2xl">{content2}</p>
       </div>
     </div>
   );

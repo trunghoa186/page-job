@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "@/styles/pageName.module.css"
 import Container from "@mui/material/Container";
 
-const PageName = () => {
+const PageName = ({title}) => {
   return (
     <div className={`${Styles.pageName} bg-white`}>
       <Container>
@@ -19,7 +19,7 @@ const PageName = () => {
             width={20}
             alt="brand-icon"
           />
-          <p className="font-semibold">求人 一覧</p>
+          <p className="font-semibold">{title}</p>
         </div>
       </Container>
     </div>
