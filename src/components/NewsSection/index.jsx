@@ -93,7 +93,7 @@ const HeadIcon = () => (
 const NewsSection = () => {
   return (
     <Box py={8}>
-      <Container maxWidth="md" sx={{ px: { xs: 0, md: 3 } }}>
+      <Container sx={{ px: { xs: 0, md: 3 } }}>
         <Stack
           direction={{ xs: "column-reverse", md: "row" }}
           spacing={{ xs: 1, md: 3 }}

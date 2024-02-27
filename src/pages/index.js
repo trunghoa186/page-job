@@ -13,6 +13,7 @@ import Banner from "@/components/banner";
 import SearchType from "@/components/searchType";
 import JobWal from "@/components/jobWall";
 import JobWalBig from "@/components/jobWallBig";
+import TitleSection from "@/components/titleSection";
 
 export default function Home() {
   return (
@@ -54,36 +55,13 @@ export default function Home() {
         {/* WorkLocationMap */}
         <div className="bg-white py-20">
           <Container>
-            <div className="ml-10 mb-11 flex gap-4 text-xl items-center">
-              <img
-                src="/images/icons/puzzle.svg"
-                height={30}
-                width={30}
-                alt="puzzle"
-              />
-              <p className="font-semibold">勤務地から探す</p>
-            </div>
+            <TitleSection contents="勤務地から探す" />
             <WorkLocationMap />
-            <div className="mt-20 ml-10 mb-11 flex gap-4 text-xl items-center">
-              <img
-                src="/images/icons/puzzle.svg"
-                height={45}
-                width={50}
-                alt="puzzle"
-              />
-              <p className="font-semibold">雇用形態から探す</p>
-            </div>
+
+            <TitleSection contents="雇用形態から探す" />
             <WorkingTypes />
 
-            <div className="mt-20 ml-10 mb-11 flex gap-4 text-xl items-center">
-              <img
-                src="/images/icons/puzzle.svg"
-                height={45}
-                width={50}
-                alt="puzzle"
-              />
-              <p className="font-semibold">勤務地から探す</p>
-            </div>
+            <TitleSection contents="勤務地から探す" />
             <div className="ml-10 text-center fix-code">
               <SearchJobByOptions />
             </div>
