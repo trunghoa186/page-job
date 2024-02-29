@@ -57,7 +57,7 @@ function Header(props) {
                 gap={4}
               >
                 {navItems.map((item, index) => (
-                  <Button key={index} sx={{ color: "#fff" }}>
+                  <Button className="text-base font-semibold" key={index} sx={{ color: "#fff" }}>
                     {item.label}
                   </Button>
                 ))}
