@@ -164,9 +164,8 @@ body {
 }
 
 .block-job-btn {
-  height: 48px;
   color: white;
-  padding: 0 12px;
+  padding: 4px 12px;
   border-radius: 3px;
 }
 
@@ -179,10 +178,10 @@ body {
   padding: 20px 30px;
 }
 .block-job-btn-big {
-  color: #6FCDF6;
-  border-radius: 32px;
-  border:1px solid #040000;
-}
+  color: white;
+  border-radius: 12px;
+  background-color: var(--main-color);
+  }
 
 @media only screen and (max-width: 519px) {
   .banner-child-2 {
